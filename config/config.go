@@ -12,7 +12,7 @@ import (
 
 var defaultConf = []byte(`
 core:
-  enabled: true # enabale httpd server
+  enabled: false # enabale httpd server
   address: "" # ip address to bind (default: any)
   port: "8088" # ignore this port number if auto_tls is enabled (listen 443).
   worker_num: 0 # default worker number is runtime.NumCPU()
@@ -36,7 +36,7 @@ core:
     host: "" # which domains the Let's Encrypt will attempt
 
 grpc:
-  enabled: false # enabale gRPC server
+  enabled: true # enabale gRPC server
   port: 9000
 
 api:
@@ -154,6 +154,10 @@ type SectionIos struct {
 	MaxRetry   int    `yaml:"max_retry"`
 	KeyID      string `yaml:"key_id"`
 	TeamID     string `yaml:"team_id"`
+	SafariPath string `yaml:"safari_path"`
+	SafariPass string `yaml:"safari_pass"` // pass - password!
+	VoipPath 	 string `yaml:"voip_path"`
+	VoipPass 	 string `yaml:"voip_pass"`
 }
 
 // SectionLog is sub section of config.
@@ -294,6 +298,11 @@ func LoadConf(confPath string) (ConfYaml, error) {
 	conf.Ios.MaxRetry = viper.GetInt("ios.max_retry")
 	conf.Ios.KeyID = viper.GetString("ios.key_id")
 	conf.Ios.TeamID = viper.GetString("ios.team_id")
+	//additionnal stuff for server_node
+	conf.Ios.SafariPath = viper.GetString("ios.safari_path")
+	conf.Ios.SafariPass = viper.GetString("ios.safari_pass")
+	conf.Ios.VoipPath = viper.GetString("ios.voip_path")
+	conf.Ios.VoipPass = viper.GetString("ios.voip_pass")
 
 	// log
 	conf.Log.Format = viper.GetString("log.format")

@@ -233,6 +233,8 @@ func main() {
 	var g errgroup.Group
 
 	g.Go(gorush.InitAPNSClient)
+	g.Go(gorush.InitVoipClient) // voice over ip 
+	g.Go(gorush.InitSafariClient) // Safari pushes
 
 	g.Go(func() error {
 		_, err := gorush.InitFCMClient(gorush.PushConf.Android.APIKey)

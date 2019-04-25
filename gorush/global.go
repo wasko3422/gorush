@@ -16,6 +16,10 @@ var (
 	QueueNotification chan PushNotification
 	// ApnsClient is apns client
 	ApnsClient *apns2.Client
+	// VOIPClient is Voice Over IP
+	VOIPClient *apns2.Client
+	// SafariClient is safari
+	SafariClient *apns2.Client
 	// FCMClient is apns client 321
 	FCMClient *fcm.Client
 	// LogAccess is log server request log
