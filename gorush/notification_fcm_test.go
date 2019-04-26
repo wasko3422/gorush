@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/appleboy/go-fcm"
-	"github.com/appleboy/gorush/config"
+	"github.com/wasko3422/go-fcm"
+	"github.com/wasko3422/gorush/config"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -25,6 +25,7 @@ type Sound struct {
 // InitAPNSClient use for initialize APNs Client.
 func InitAPNSClient() error {
 	if PushConf.Ios.Enabled {
+		LogAccess.Debug("Starting APNSclient")
 		var err error
 		var authKey *ecdsa.PrivateKey
 		var certificateKey tls.Certificate
@@ -102,33 +103,41 @@ func InitAPNSClient() error {
 
 //InitVoipClient for voice over ip
 func InitVoipClient() error{
+
 	if PushConf.Ios.Enabled && PushConf.Ios.VoipPath != "" {
-		voipCertificate, err := certificate.FromP12File(PushConf.Ios.VoipPath, PushConf.Ios.VoipPass)
-		if err != nil{
-			return err
-		}
-		if PushConf.Ios.Production{
-			VOIPClient = apns2.NewClient(voipCertificate).Production()
-		} else {
-			VOIPClient = apns2.NewClient(voipCertificate).Development()
-		}
+		LogAccess.Debug("There is no voipPath or ios disabled")
+		return nil
 	}
+
+	voipCertificate, err := certificate.FromP12File(PushConf.Ios.VoipPath, PushConf.Ios.VoipPass)
+	if err != nil{
+		return err
+	}
+	if PushConf.Ios.Production{
+		VOIPClient = apns2.NewClient(voipCertificate).Production()
+	} else {
+		VOIPClient = apns2.NewClient(voipCertificate).Development()
+	}	
 	return nil
 }
 
 // InitSafariClient for safari 
 // Made more simple comparing with the original Client
 func InitSafariClient() error{
+
 	if PushConf.Ios.Enabled && PushConf.Ios.SafariPath != "" {
-		safariCertificate, err := certificate.FromP12File(PushConf.Ios.SafariPath, PushConf.Ios.SafariPass)
-		if err != nil{
-			return err
-		}
-		if PushConf.Ios.Production{
-			SafariClient = apns2.NewClient(safariCertificate).Production()
-		} else {
-			SafariClient = apns2.NewClient(safariCertificate).Development()
-		}
+		LogAccess.Debug("There is no voipPath or ios disabled")
+		return nil
+	}
+
+	safariCertificate, err := certificate.FromP12File(PushConf.Ios.SafariPath, PushConf.Ios.SafariPass)
+	if err != nil{
+		return err
+	}
+	if PushConf.Ios.Production{
+		SafariClient = apns2.NewClient(safariCertificate).Production()
+	} else {
+		SafariClient = apns2.NewClient(safariCertificate).Development()
 	}
 	return nil
 }

@@ -1,17 +1,17 @@
 # gorush
 
-A push notification micro server using [Gin](https://github.com/gin-gonic/gin) framework written in Go (Golang) and see the [demo app](https://github.com/appleboy/flutter-gorush).
+A push notification micro server using [Gin](https://github.com/gin-gonic/gin) framework written in Go (Golang) and see the [demo app](https://github.com/wasko3422/flutter-gorush).
 
-[![GoDoc](https://godoc.org/github.com/appleboy/gorush?status.svg)](https://godoc.org/github.com/appleboy/gorush)
-[![Build Status](https://cloud.drone.io/api/badges/appleboy/gorush/status.svg)](https://cloud.drone.io/appleboy/gorush)
-[![Build status](https://ci.appveyor.com/api/projects/status/ka4hvplssp1q2s5u?svg=true)](https://ci.appveyor.com/project/appleboy/gorush-fp5dh)
-[![codecov](https://codecov.io/gh/appleboy/gorush/branch/master/graph/badge.svg)](https://codecov.io/gh/appleboy/gorush)
-[![Go Report Card](https://goreportcard.com/badge/github.com/appleboy/gorush)](https://goreportcard.com/report/github.com/appleboy/gorush)
-[![codebeat badge](https://codebeat.co/badges/0a4eff2d-c9ac-46ed-8fd7-b59942983390)](https://codebeat.co/projects/github-com-appleboy-gorush)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c82e0ed283474c5686d705ce64d004f7)](https://www.codacy.com/app/appleboy/gorush?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=appleboy/gorush&amp;utm_campaign=Badge_Grade)
-[![Docker Pulls](https://img.shields.io/docker/pulls/appleboy/gorush.svg)](https://hub.docker.com/r/appleboy/gorush/)
-[![](https://images.microbadger.com/badges/image/appleboy/gorush.svg)](https://microbadger.com/images/appleboy/gorush "Get your own image badge on microbadger.com")
-[![Release](https://github-release-version.herokuapp.com/github/appleboy/gorush/release.svg?style=flat)](https://github.com/appleboy/gorush/releases/latest)
+[![GoDoc](https://godoc.org/github.com/wasko3422/gorush?status.svg)](https://godoc.org/github.com/wasko3422/gorush)
+[![Build Status](https://cloud.drone.io/api/badges/wasko3422/gorush/status.svg)](https://cloud.drone.io/wasko3422/gorush)
+[![Build status](https://ci.appveyor.com/api/projects/status/ka4hvplssp1q2s5u?svg=true)](https://ci.appveyor.com/project/wasko3422/gorush-fp5dh)
+[![codecov](https://codecov.io/gh/wasko3422/gorush/branch/master/graph/badge.svg)](https://codecov.io/gh/wasko3422/gorush)
+[![Go Report Card](https://goreportcard.com/badge/github.com/wasko3422/gorush)](https://goreportcard.com/report/github.com/wasko3422/gorush)
+[![codebeat badge](https://codebeat.co/badges/0a4eff2d-c9ac-46ed-8fd7-b59942983390)](https://codebeat.co/projects/github-com-wasko3422-gorush)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c82e0ed283474c5686d705ce64d004f7)](https://www.codacy.com/app/wasko3422/gorush?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=wasko3422/gorush&amp;utm_campaign=Badge_Grade)
+[![Docker Pulls](https://img.shields.io/docker/pulls/wasko3422/gorush.svg)](https://hub.docker.com/r/wasko3422/gorush/)
+[![](https://images.microbadger.com/badges/image/wasko3422/gorush.svg)](https://microbadger.com/images/wasko3422/gorush "Get your own image badge on microbadger.com")
+[![Release](https://github-release-version.herokuapp.com/github/wasko3422/gorush/release.svg?style=flat)](https://github.com/wasko3422/gorush/releases/latest)
 
 ## Contents
 
@@ -56,7 +56,7 @@ A push notification micro server using [Gin](https://github.com/gin-gonic/gin) f
   - [Stargazers over time](#stargazers-over-time)
   - [License](#license)
 
-<a href="https://www.buymeacoffee.com/appleboy" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+<a href="https://www.buymeacoffee.com/wasko3422" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
 ## Support Platform
 
@@ -65,7 +65,7 @@ A push notification micro server using [Gin](https://github.com/gin-gonic/gin) f
 
 ## Features
 
-* Support [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging) using [go-fcm](https://github.com/appleboy/go-fcm) library for Android.
+* Support [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging) using [go-fcm](https://github.com/wasko3422/go-fcm) library for Android.
 * Support [HTTP/2](https://http2.github.io/) Apple Push Notification Service using [apns2](https://github.com/sideshow/apns2) library.
 * Support [YAML](https://github.com/go-yaml/yaml) configuration.
 * Support command line to send single Android or iOS notification.
@@ -183,36 +183,36 @@ How to send push notification using `gorush` command? (Android or iOS)
 
 ### Download a binary
 
-The pre-compiled binaries can be downloaded from [release page](https://github.com/appleboy/gorush/releases).
+The pre-compiled binaries can be downloaded from [release page](https://github.com/wasko3422/gorush/releases).
 
 With `Go` installed
 
 ```
-$ go get -u -v github.com/appleboy/gorush
+$ go get -u -v github.com/wasko3422/gorush
 ```
 
 On linux
 
 ```sh
-$ wget https://github.com/appleboy/gorush/releases/download/1.10.0/gorush-1.10.0-linux-amd64 -O gorush
+$ wget https://github.com/wasko3422/gorush/releases/download/1.10.0/gorush-1.10.0-linux-amd64 -O gorush
 ```
 
 On OS X
 
 ```sh
-$ wget https://github.com/appleboy/gorush/releases/download/1.10.0/gorush-1.10.0-darwin-amd64 -O gorush
+$ wget https://github.com/wasko3422/gorush/releases/download/1.10.0/gorush-1.10.0-darwin-amd64 -O gorush
 ```
 
 On Windows
 
 ```sh
-$ wget https://github.com/appleboy/gorush/releases/download/1.10.0/gorush-1.10.0-windows-amd64.exe -O gorush.exe
+$ wget https://github.com/wasko3422/gorush/releases/download/1.10.0/gorush-1.10.0-windows-amd64.exe -O gorush.exe
 ```
 
 On macOS, use Homebrew.
 
 ```
-$ brew install --HEAD https://github.com/appleboy/gorush/raw/master/HomebrewFormula/gorush.rb
+$ brew install --HEAD https://github.com/wasko3422/gorush/raw/master/HomebrewFormula/gorush.rb
 ```
 
 ### Install from source
@@ -229,7 +229,7 @@ Gorush uses the Go Modules support built into Go 1.11 to build. The easiest way 
 ```
 $ mkdir $HOME/src
 $ cd $HOME/src
-$ git clone https://github.com/appleboy/gorush.git
+$ git clone https://github.com/wasko3422/gorush.git
 $ cd gorush
 $ go install
 ```
@@ -668,7 +668,7 @@ Add other fields which user defined via `data` field.
 }
 ```
 
-Support send notification from different environment. See the detail of [issue](https://github.com/appleboy/gorush/issues/246).
+Support send notification from different environment. See the detail of [issue](https://github.com/wasko3422/gorush/issues/246).
 
 ```diff
 {
@@ -841,7 +841,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/appleboy/gorush/rpc/proto"
+	"github.com/wasko3422/gorush/rpc/proto"
 
 	"google.golang.org/grpc"
 )
@@ -931,7 +931,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/appleboy/gorush/rpc/proto"
+	"github.com/wasko3422/gorush/rpc/proto"
 
 	"google.golang.org/grpc"
 )
@@ -974,18 +974,18 @@ func main() {
 
 ## Run gorush in Docker
 
-Set up `gorush` in the cloud in under 5 minutes with zero knowledge of Golang or Linux shell using our [gorush Docker image](https://hub.docker.com/r/appleboy/gorush/).
+Set up `gorush` in the cloud in under 5 minutes with zero knowledge of Golang or Linux shell using our [gorush Docker image](https://hub.docker.com/r/wasko3422/gorush/).
 
 ```bash
-$ docker pull appleboy/gorush
-$ docker run --name gorush -p 80:8088 appleboy/gorush
+$ docker pull wasko3422/gorush
+$ docker run --name gorush -p 80:8088 wasko3422/gorush
 ```
 
 Run `gorush` with your own config file.
 
 ```bash
-$ docker pull appleboy/gorush
-$ docker run --name gorush -v ${PWD}/config.yml:/config.yml -p 80:8088 appleboy/gorush
+$ docker pull wasko3422/gorush
+$ docker run --name gorush -v ${PWD}/config.yml:/config.yml -p 80:8088 wasko3422/gorush
 ```
 
 Testing your gorush server using [httpie](https://github.com/jkbrzt/httpie) command.
@@ -1061,7 +1061,7 @@ AWS excited to [announce Go as a supported language for AWS Lambda](https://aws.
 Download source code first.
 
 ```sh
-$ git clone https://github.com/appleboy/gorush.git
+$ git clone https://github.com/wasko3422/gorush.git
 $ cd gorush && make build_linux_lambda
 ```
 
@@ -1075,7 +1075,7 @@ we need to build a binary that will run on Linux, and ZIP it up into a deploymen
 $ zip deployment.zip release/linux/lambda/gorush
 ```
 
-Upload the `deployment.zip` via web UI or you can try the [drone-lambda](https://github.com/appleboy/drone-lambda) as the following command. it will zip your binary file and upload to AWS Lambda automatically.
+Upload the `deployment.zip` via web UI or you can try the [drone-lambda](https://github.com/wasko3422/drone-lambda) as the following command. it will zip your binary file and upload to AWS Lambda automatically.
 
 ```sh
 $ AWS_ACCESS_KEY_ID=YOUR_AWS_ACCESS_KEY_ID \
@@ -1087,10 +1087,10 @@ $ AWS_ACCESS_KEY_ID=YOUR_AWS_ACCESS_KEY_ID \
 
 ## Stargazers over time
 
-[![Stargazers over time](https://starcharts.herokuapp.com/appleboy/gorush.svg)](https://starcharts.herokuapp.com/appleboy/gorush)
+[![Stargazers over time](https://starcharts.herokuapp.com/wasko3422/gorush.svg)](https://starcharts.herokuapp.com/wasko3422/gorush)
 
 ## License
 
-Copyright 2018 Bo-Yi Wu [@appleboy](https://twitter.com/appleboy).
+Copyright 2018 Bo-Yi Wu [@wasko3422](https://twitter.com/wasko3422).
 
 Licensed under the MIT License.

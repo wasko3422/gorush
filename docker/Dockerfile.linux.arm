@@ -1,6 +1,6 @@
 FROM plugins/base:linux-arm
 
-LABEL maintainer="Bo-Yi Wu <appleboy.tw@gmail.com>" \
+LABEL maintainer="Bo-Yi Wu <wasko3422.tw@gmail.com>" \
   org.label-schema.name="Gorush" \
   org.label-schema.vendor="Bo-Yi Wu" \
   org.label-schema.schema-version="1.0"

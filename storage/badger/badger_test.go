@@ -3,7 +3,7 @@ package badger
 import (
 	"testing"
 
-	c "github.com/appleboy/gorush/config"
+	c "github.com/wasko3422/gorush/config"
 	"github.com/stretchr/testify/assert"
 )
 

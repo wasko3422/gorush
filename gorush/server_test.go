@@ -7,11 +7,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/appleboy/gorush/config"
+	"github.com/wasko3422/gorush/config"
 	"github.com/buger/jsonparser"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
-	"gopkg.in/appleboy/gofight.v2"
+	"gopkg.in/wasko3422/gofight.v2"
 )
 
 var goVersion = runtime.Version()

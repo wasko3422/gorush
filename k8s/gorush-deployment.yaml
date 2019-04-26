@@ -12,7 +12,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: appleboy/gorush
+      - image: wasko3422/gorush
         name: gorush
         imagePullPolicy: Always
         ports:

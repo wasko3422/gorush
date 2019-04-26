@@ -63,6 +63,10 @@ ios:
   max_retry: 0 # resend fail notification, default value zero is disabled
   key_id: "" # KeyID from developer account (Certificates, Identifiers & Profiles -> Keys)
   team_id: "" # TeamID from developer account (View Account -> Membership)
+  safari_path: "" #put your path to certificate here
+  safari_pass: "" #password for voip
+  voip_path: "" #path to voip certificate
+  voip_pass: "" # password for voip
 
 log:
   format: "string" # string or json

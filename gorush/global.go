@@ -1,8 +1,8 @@
 package gorush
 
 import (
-	"github.com/appleboy/gorush/config"
-	"github.com/appleboy/gorush/storage"
+	"github.com/wasko3422/gorush/config"
+	"github.com/wasko3422/gorush/storage"
 
 	"github.com/appleboy/go-fcm"
 	"github.com/sideshow/apns2"
@@ -16,9 +16,9 @@ var (
 	QueueNotification chan PushNotification
 	// ApnsClient is apns client
 	ApnsClient *apns2.Client
-	// VOIPClient is Voice Over IP
+	// VOIPClient is Voice Over IP client
 	VOIPClient *apns2.Client
-	// SafariClient is safari
+	// SafariClient is safari client
 	SafariClient *apns2.Client
 	// FCMClient is apns client 321
 	FCMClient *fcm.Client

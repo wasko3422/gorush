@@ -2,7 +2,7 @@ DIST := dist
 EXECUTABLE := gorush
 
 GO ?= go
-DEPLOY_ACCOUNT := appleboy
+DEPLOY_ACCOUNT := wasko3422
 DEPLOY_IMAGE := $(EXECUTABLE)
 GOFMT ?= gofmt "-s"
 

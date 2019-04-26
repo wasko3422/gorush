@@ -2,7 +2,7 @@
 *.o
 *.a
 *.so
-
+.vscode
 # Folders
 _obj
 _test
@@ -35,3 +35,5 @@ dist
 custom
 release
 coverage.txt
+
+gorush.yml
