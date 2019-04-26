@@ -1083,14 +1083,3 @@ $ AWS_ACCESS_KEY_ID=YOUR_AWS_ACCESS_KEY_ID \
   drone-lambda --region ap-southeast-1 \
   --function-name gorush \
   --source release/linux/lambda/gorush
-```
-
-## Stargazers over time
-
-[![Stargazers over time](https://starcharts.herokuapp.com/wasko3422/gorush.svg)](https://starcharts.herokuapp.com/wasko3422/gorush)
-
-## License
-
-Copyright 2018 Bo-Yi Wu [@wasko3422](https://twitter.com/wasko3422).
-
-Licensed under the MIT License.
